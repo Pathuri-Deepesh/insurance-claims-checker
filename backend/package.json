@@ -1,0 +1,21 @@
+{
+  "name": "insurance-claims-checker-backend",
+  "version": "1.0.0",
+  "description": "Backend for Insurance Claims Policy Compliance Checker",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest",
+    "db:setup": "node src/db/setup.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

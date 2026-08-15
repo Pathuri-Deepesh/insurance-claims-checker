@@ -1,0 +1,71 @@
+.result-card {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  animation: slideIn 0.35s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-card--compliant {
+  background: linear-gradient(135deg, #d4f8e8 0%, #c1f0dc 100%);
+  border-left: 5px solid #10b981;
+}
+
+.result-card--non-compliant {
+  background: linear-gradient(135deg, #ffe3e3 0%, #ffd0d0 100%);
+  border-left: 5px solid #ef4444;
+}
+
+.result-card--manual-review {
+  background: linear-gradient(135deg, #fff4d6 0%, #ffecb3 100%);
+  border-left: 5px solid #f59e0b;
+}
+
+.result-card--error {
+  background: linear-gradient(135deg, #ffe3e3 0%, #ffd0d0 100%);
+  border-left: 5px solid #ef4444;
+}
+
+.result-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+}
+
+.result-card__reason {
+  font-size: 0.95rem;
+  color: #2d2d44;
+  line-height: 1.5;
+}
+
+.result-card__payable {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a1a2e;
+}
+
+.result-card__payable span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4a4a68;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  display: block;
+  margin-bottom: 0.2rem;
+}
